@@ -15,8 +15,6 @@ def myAtoi(s: str) -> int:
     number = number // 10 *(-1) if neg else number // 10 
     return min(2**31 -1, max(-2**31, number))
 
-
-
 if __name__ == "__main__":
     assert myAtoi("42") == 42
     assert myAtoi("-42") == -42
