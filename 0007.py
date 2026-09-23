@@ -13,8 +13,6 @@ def reverse(x: int) -> int:
     return 0 if val.bit_length() > 31 else val
 
 
-
-
 if __name__ == "__main__":
     assert reverse(123) == 321
     assert reverse(-123) == -321
