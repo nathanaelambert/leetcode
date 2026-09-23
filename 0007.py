@@ -7,11 +7,9 @@ def reverse(x: int) -> int:
         s += str(digit)
         x -= digit
         x = x // 10
-
     rev = int(s) if s else 0
     val = rev * -1 if neg else rev 
     return 0 if val.bit_length() > 31 else val
-
 
 if __name__ == "__main__":
     assert reverse(123) == 321
