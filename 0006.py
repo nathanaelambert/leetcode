@@ -10,11 +10,9 @@ def convert(s: str, numRows: int) -> str:
             index = 2*max_row_id - index
         return index
 
-
     for i in range(len(s)):
         rows[zigzag(i)] += s[i]
     return "".join(rows)
-
 
 if __name__ == "__main__":
     assert convert("PAYPALISHIRING", 3) == "PAHNAPLSIIGYIR"
